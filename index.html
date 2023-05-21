@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Maximum Plumbing</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body class="">
+    <div class="relative mx-auto flex max-w-[1680px] flex-col overflow-hidden">
+      <header class="static left-0 top-0 z-10 flex w-full items-center justify-between rounded-none bg-black px-10 py-5 text-white sm:px-20 sm:py-6 lg:absolute lg:rounded-b-xl lg:bg-[#AEAEAE80]">
+        <div class="relative z-10 max-w-[60px] sm:max-w-[80px] md:max-w-[120px]">
+          <a href="#" class="">
+            <img src="./img/logo.png" alt="Logo" class="w-full" />
+          </a>
+        </div>
+        <nav id="header_nav" class="absolute -left-[100%] bottom-0 right-0 top-0 flex h-screen w-screen flex-auto flex-col items-center justify-center bg-black transition-transform md:static md:block md:h-auto md:w-auto md:bg-transparent">
+          <ul class="mr-0 flex flex-col items-center justify-end gap-14 md:mr-14 md:flex-row">
+            <li class="rounded-xl px-3 py-2 text-4xl hover:cursor-pointer hover:bg-gray-200 hover:text-black md:text-base">
+              <a href="#form"> Contact </a>
+            </li>
+            <li class="rounded-xl px-3 py-2 text-4xl hover:cursor-pointer hover:bg-gray-200 hover:text-black md:text-base">
+              <a href="#services"> Services </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:(818) 860-0510" id="header_phone" class="group absolute left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-xl px-3 py-2 text-sm hover:cursor-pointer hover:bg-gray-200 hover:text-black sm:text-2xl md:static md:translate-x-0 md:text-base">
+          <div class="inline-block max-w-[14px] transition-transform group-hover:scale-150">
+            <!-- <img src="./img/phone-icon.svg" alt="phone-icon" class="w-full group-hover:text-black" /> -->
+            <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_29_43)">
+                <path class="group-hover:fill-black" d="M10.8398 10.9736L10.0444 11.769C9.90232 11.9103 9.4863 11.9997 9.47386 11.9997C6.95585 12.0209 4.53162 11.0322 2.75007 9.25022C0.96341 7.46389 -0.0264236 5.03012 0.0010451 2.50481C0.0010451 2.50333 0.0922402 2.09906 0.233967 1.95843L1.02936 1.16231C1.32123 0.870819 1.88003 0.738983 2.2715 0.869342L2.43922 0.925733C2.8307 1.05609 3.23973 1.48821 3.34812 1.88589L3.74874 3.35582C3.85749 3.75426 3.71138 4.32112 3.41989 4.61261L2.88816 5.14433C3.40965 7.07715 4.92532 8.59248 6.85704 9.11469L7.38877 8.58294C7.68028 8.29142 8.24862 8.14569 8.64705 8.25409L10.117 8.65545C10.514 8.76312 10.9461 9.17178 11.0772 9.56361L11.1329 9.73133C11.2631 10.1232 11.1313 10.6821 10.8398 10.9736ZM6.75009 5.99982H7.50007C7.50007 5.17147 6.82847 4.49987 6.00012 4.49987V5.24985C6.41353 5.24985 6.75009 5.58674 6.75009 5.99982ZM9.75 5.99982C9.75 3.92859 8.07133 2.24993 6.00012 2.24993V2.99992C7.65459 2.99992 9.00002 4.34608 9.00002 5.99982H9.75ZM6.00012 0V0.749975C8.89455 0.749975 11.2499 3.10537 11.2499 5.99982H11.9999C11.9999 2.68645 9.3135 0 6.00012 0Z" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_29_43">
+                  <rect width="12" height="12" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <span>(818) 860-0510</span>
+        </a>
+        <div id="burger_icon" class="relative z-20 block h-6 w-10 cursor-pointer transition-transform sm:h-8 sm:w-14 md:hidden md:h-10 md:w-16">
+          <span class="burger-line absolute left-0 top-0 block h-[2px] w-full rounded bg-white opacity-100 transition-all duration-200 ease-linear"></span>
+          <span class="burger-line absolute left-0 top-1/2 block h-[2px] w-full -translate-y-1/2 rounded bg-white transition-all duration-200 ease-linear"></span>
+          <span class="burger-line absolute bottom-0 left-0 block h-[2px] w-full rounded bg-white opacity-100 transition-all duration-200 ease-linear"></span>
+        </div>
+      </header>
+      <main class="w-full flex-auto">
+        <article class="py-15 sm:px-15 relative flex flex-col items-center bg-hero-pattern bg-cover bg-[top_left] bg-no-repeat px-0 text-white sm:py-20 md:bg-center md:px-20 md:py-24 lg:flex-row lg:py-0 max-[1680px]:lg:h-screen min-[1680px]:py-40">
+          <div class="flex h-[90svh] items-center sm:h-[80svh] md:h-[70svh] lg:h-fit">
+            <h1 data-aos="flip-right" class="text-center text-2xl font-semibold leading-snug sm:text-4xl md:text-start lg:mb-0 lg:text-5xl xl:text-6xl">
+              Our goal at
+              <span class="italic text-root_yellow"
+                >Maximum<br class="hidden lg:inline" />
+                Plumbing</span
+              ><br class="hidden lg:inline" />
+              is to create customers<br class="hidden lg:inline" />
+              for life!
+            </h1>
+          </div>
+          <form action="#" id="form" class="relative w-full rounded-none bg-root_yellow px-10 py-6 drop-shadow-2xl sm:rounded-2xl lg:absolute lg:-bottom-[30%] lg:right-[10%] lg:w-fit">
+            <h4 class="mb-8 text-center text-xl font-semibold text-[#414141]">CONTACT US</h4>
+            <div class="flex flex-col gap-5 text-black">
+              <input class="w-full min-w-full border-none bg-[#F9F0E6] md:min-w-[350px]" type="text" name="name" id="name" placeholder="Name" required />
+              <input class="w-full min-w-full border-none bg-[#F9F0E6] md:min-w-[350px]" type="email" name="email" id="email" placeholder="Email" required />
+              <input class="w-full min-w-full border-none bg-[#F9F0E6] md:min-w-[350px]" type="tel" name="tel" id="tel" placeholder="Phone" required />
+              <textarea class="h-40 w-full min-w-full resize-none border-none bg-[#F9F0E6] md:min-w-[300px]" name="message" id="message" placeholder="Message" required></textarea>
+              <button class="mb-10 border-2 border-black bg-transparent font-semibold leading-[3] hover:bg-[#00000020]" id="form_btn">SEND</button>
+            </div>
+            <a href="tel:(818) 860-0510" class="mx-auto block max-w-[180px] transition-transform hover:scale-110">
+              <img src="./img/call-us.svg" alt="Call us" class="w-full" />
+            </a>
+          </form>
+        </article>
+        <article class="sm:p-15 p-10 md:p-20">
+          <h3 class="mb-12 max-w-full text-center text-2xl font-semibold lg:max-w-[40%]">TAILORED SOLUTIONS</h3>
+          <ul class="flex flex-col gap-5">
+            <li class="flex max-w-full items-center gap-3 lg:max-w-[40%]" data-aos="fade-right">
+              <img src="./img/ben-1.svg" alt="Benefit" />
+              <p>Maximum Plumbing whenever you need effective cleaning of your blocked drains.</p>
+            </li>
+            <li class="flex max-w-full items-center gap-3 lg:max-w-[50%]" data-aos="fade-right">
+              <img src="./img/ben-2.svg" alt="Benefit" />
+              <p>Similarly, we can help you with new house plumbing installation, toilet repairs, backflow prevention, etc.</p>
+            </li>
+            <li class="flex max-w-full items-center gap-3 lg:max-w-[80%]" data-aos="fade-right">
+              <img src="./img/ben-3.svg" alt="Benefit" />
+              <p>All of our services are fully customized to meet your specific needs, and we back up these solutions with some of the industry's best technology and time-tested techniques.</p>
+            </li>
+          </ul>
+        </article>
+        <article id="services" class="sm:p-15 bg-services-pattern bg-cover bg-center bg-no-repeat p-10 md:p-20">
+          <h3 class="mb-12 text-center text-2xl font-semibold text-white">OUR SERVICES THAT WE OFFER</h3>
+          <ul class="mx-auto flex flex-wrap items-center justify-around gap-5 text-white">
+            <li data-aos="fade-right" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-1.svg')] bg-[5%_center] bg-no-repeat text-center">HOT WATER SYSTEMS</li>
+            <li data-aos="fade-up" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-2.svg')] bg-[5%_center] bg-no-repeat text-center">LEAK DETECTION</li>
+            <li data-aos="fade-left" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-3.svg')] bg-[5%_center] bg-no-repeat text-center">TOILET REPAIRS</li>
+            <li data-aos="fade-right" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-4.svg')] bg-[5%_center] bg-no-repeat text-center">GAS FITTING</li>
+            <li data-aos="fade-up" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-5.svg')] bg-[5%_center] bg-no-repeat text-center">LEAKING TAPS</li>
+            <li data-aos="fade-left" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-6.svg')] bg-[5%_center] bg-no-repeat text-center">
+              BURST<br />
+              AND LEAKING PIPES
+            </li>
+            <li data-aos="fade-up" class="flex h-20 w-[400px] items-center justify-center rounded-lg bg-[#004AADCC] bg-[url('../img/services-7.svg')] bg-[5%_center] bg-no-repeat text-center">
+              BLOCKED TOILETS<br />
+              AND DRAINS
+            </li>
+          </ul>
+        </article>
+        <article class="sm:p-15 p-10 md:p-20">
+          <h3 class="mb-12 text-center text-2xl font-semibold">EFFICIENT PLUMBING SERVICES</h3>
+          <section class="flex flex-col items-center justify-between gap-14 md:flex-row">
+            <div data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" class="flex flex-col items-center justify-center gap-5 text-center">
+              <div class="max-w-[120px]">
+                <img src="./img/efficient-1.png" alt="prompt service" class="w-full" />
+              </div>
+              <h5 class="text-xl font-semibold">PROMPT SERVICE</h5>
+              <p>We arrive promptly so your plumbing will be repaired swiftly</p>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="flex flex-col items-center justify-center gap-5 text-center">
+              <div class="max-w-[120px]">
+                <img src="./img/efficient-2.png" alt="trained experts" class="w-full" />
+              </div>
+              <h5 class="text-xl font-semibold">TRAINED EXPERTS</h5>
+              <p>Every member of our has received high-quality training</p>
+            </div>
+            <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" class="flex flex-col items-center justify-center gap-5 text-center">
+              <div class="max-w-[120px]">
+                <img src="./img/efficient-3.png" alt="the right tools" class="w-full" />
+              </div>
+              <h5 class="text-xl font-semibold">THE RIGHT TOOLS</h5>
+              <p>We use the best tools to keep our plumbing services efficient</p>
+            </div>
+          </section>
+        </article>
+        <article class="sm:p-15 flex flex-col items-center justify-between bg-root_yellow p-10 md:flex-row md:p-20">
+          <div class="mb-5 flex w-full items-center justify-center md:mb-0 md:w-1/2"><img src="./img/gaurantee.png" alt="guarantee" class="w-full max-w-[315px]" /></div>
+          <div class="flex w-full flex-col items-center justify-center text-center md:w-1/2">
+            <p class="mb-12 text-lg">Our company will perform all work related to plumbing: repair, installation, replacement. We guarantee quality and speed. For more information and to place an order, just contact us</p>
+            <a href="#form" class="rounded-3xl bg-[#004AAD] px-6 py-3 text-white hover:bg-blue-500">CONTACT US</a>
+          </div>
+        </article>
+        <article class="flex flex-col lg:flex-row">
+          <div class="sm:p-15 flex w-full flex-col items-center justify-center p-10 md:p-20 lg:w-1/2" style="background: linear-gradient(360deg, #eee9e6 0%, #f3f2f0 22.82%, #f5f4f2 49.75%, #f5f4f2 79.13%, #f6f2ef 100%)">
+            <h3 class="mb-12 text-center text-2xl font-semibold">SWIFT PLUMBING SOLUTIONS</h3>
+            <p class="text-lg">
+              Our plumbers can quickly repair water leaks, busted pipes, and hot water systems.<br />
+              Besides, you can always call. Maximum Plumbing whenever you need effective cleaning of your blocked drains.<br />
+              Similarly, we can help you with new house plumbing installation, toilet repairs, backflow prevention, etc.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <img src="./img/swift-pattern.jpg" alt="Swift Plumbing Solutions" />
+          </div>
+        </article>
+        <article class="flex flex-col-reverse md:flex-row">
+          <div class="h-80 w-full md:h-auto md:w-3/5">
+            <iframe class="h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52809.687394885674!2d-118.36641077653461!3d34.182003565451105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295152818c595%3A0x307791af901f8ad4!2z0JHQtdGA0LHQsNC90LosINCa0LDQu9GW0YTQvtGA0L3RltGPLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1684678117987!5m2!1suk!2sua" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="flex w-full flex-col items-center justify-center px-10 py-20 md:w-2/5 md:px-20 md:py-40">
+            <h3 class="mb-12 text-center text-2xl font-semibold">CONTACTS</h3>
+            <ul class="flex flex-col gap-4">
+              <li><span class="mr-2 font-semibold">Phone:</span><a href="tel:(818) 860-0510">(818) 860-0510</a></li>
+              <li><span class="mr-2 font-semibold">Email:</span><a href="mailto:Maximumplumbingca@gmail.com">Maximumplumbingca@gmail.com</a></li>
+              <li><span class="mr-2 font-semibold">Address:</span><span>Burbank, CA</span></li>
+            </ul>
+          </div>
+        </article>
+      </main>
+      <footer class="flex items-center justify-center py-10">
+        <a href="https://www.yelp.com/biz/maximum-plumbing-san-fernando-valley-4?uid=8Pg6-bpnJ56lyWrTcm4zog&utm_source=ishare" target="_blank" class="max-w-[260px]">
+          <img src="../img/yelp.png" alt="yelp" />
+        </a>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="module" src="./js/scripts.js"></script>
+  </body>
+</html>
